@@ -1,10 +1,10 @@
 const bcrypt = require('bcrypt');
 const CustomErrorHandler = require('../../services/customerErrorHandler');
 const { UserRegisterSchema } = require('../../services/validator');
-const { User } = require('../../models');
+const User = require('../../models/User');
 
 const registerController = {
-    async adminRegisterController(req, res, next) {
+    async userRegister(req, res, next) {
         const { error } = UserRegisterSchema.validate(req.body);
         if (error) {
             return next(error);

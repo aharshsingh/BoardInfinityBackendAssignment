@@ -1,4 +1,4 @@
-const { User } = require('../../models');
+const User = require('../models/User');
 const CustomErrorHandler = require('../services/customerErrorHandler')
 const userController = {
     async getAllUser(req,res,next){

@@ -7,4 +7,4 @@ const managerAuth = (req,res,next) => {
     next();
 };
 
-export default managerAuth;
+module.exports = managerAuth;

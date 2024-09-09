@@ -1,7 +1,7 @@
 const customErrorHandler = require('../../services/customerErrorHandler');
 const bcrypt = require('bcrypt');
-const JwtService = require('../../service/JWTService');
-const { User } = require('../../models');
+const JwtService = require('../../services/JWTService');
+const  User  = require('../../models/User');
 const { loginSchema } = require('../../services/validator');
 
 const loginController = {

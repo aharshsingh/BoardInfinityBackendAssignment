@@ -7,4 +7,4 @@ const adminAuth = (req,res,next) => {
     next();
 };
 
-export default adminAuth;
+module.exports = adminAuth;
