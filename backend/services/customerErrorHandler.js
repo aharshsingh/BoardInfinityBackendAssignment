@@ -16,6 +16,9 @@ class CustomErrorHandler extends Error {
     static notFound(message) {
         return new CustomErrorHandler(401, message);
     }
+    static invalid(message) {
+        return new CustomErrorHandler(401, message);
+    }
     static serverError(message) {
         return new CustomErrorHandler(401, message);
     }
