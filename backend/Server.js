@@ -1,5 +1,5 @@
 const express = require('express');
-const { APP_PORT, DB_URL } = require('./config');
+const { APP_PORT } = require('./config');
 const routes = require('./routes');
 const errorHandler = require('./middlewares/errorHandler');
 const app = express();
